@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0900"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AD0F10AE1F713B9000F7C3EF"
+               BuildableName = "PactConsumer.framework"
+               BlueprintName = "PactConsumer iOS"
+               ReferencedContainer = "container:PactConsumer.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "echo &gt; &quot;$SRCROOT&quot;/tmp/pre-actions.log 2&gt;&amp;1&#10;PATH=&quot;$HOME&quot;/.rvm/rubies/ruby-2.3.1/bin:$PATH&#10;source &quot;$SRCROOT&quot;/scripts/start_server.sh">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "AD0F10AE1F713B9000F7C3EF"
+                     BuildableName = "PactConsumer.framework"
+                     BlueprintName = "PactConsumer iOS"
+                     ReferencedContainer = "container:PactConsumer.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "echo &gt; &quot;$SRCROOT&quot;/tmp/post-actions.log 2&gt;&amp;1&#10;PATH=&quot;$HOME&quot;/.rvm/rubies/ruby-2.3.1/bin:$PATH&#10;source &quot;$SRCROOT&quot;/scripts/stop_server.sh">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "AD0F10AE1F713B9000F7C3EF"
+                     BuildableName = "PactConsumer.framework"
+                     BlueprintName = "PactConsumer iOS"
+                     ReferencedContainer = "container:PactConsumer.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AD0F10B61F713B9100F7C3EF"
+               BuildableName = "PactConsumer iOSTests.xctest"
+               BlueprintName = "PactConsumer iOSTests"
+               ReferencedContainer = "container:PactConsumer.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AD0F10AE1F713B9000F7C3EF"
+            BuildableName = "PactConsumer.framework"
+            BlueprintName = "PactConsumer iOS"
+            ReferencedContainer = "container:PactConsumer.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AD0F10AE1F713B9000F7C3EF"
+            BuildableName = "PactConsumer.framework"
+            BlueprintName = "PactConsumer iOS"
+            ReferencedContainer = "container:PactConsumer.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AD0F10AE1F713B9000F7C3EF"
+            BuildableName = "PactConsumer.framework"
+            BlueprintName = "PactConsumer iOS"
+            ReferencedContainer = "container:PactConsumer.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

@@ -10,18 +10,23 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+  @IBOutlet weak var sendRequestButton: NSButton!
+  @IBOutlet weak var responseTextView: NSTextView!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    // Do any additional setup after loading the view.
+    self.responseTextView.isEditable = false
   }
 
   override var representedObject: Any? {
     didSet {
-    // Update the view, if already loaded.
+      
     }
   }
 
-
+  @IBAction func sendRequest(_ sender: Any) {
+    print("sendRequest clicked...")
+  }
+  
 }
 
