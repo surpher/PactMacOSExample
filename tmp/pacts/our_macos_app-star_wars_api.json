@@ -1,0 +1,60 @@
+{
+  "consumer": {
+    "name": "Our macOS app"
+  },
+  "provider": {
+    "name": "Star Wars API"
+  },
+  "interactions": [
+    {
+      "description": "a request for a character",
+      "request": {
+        "method": "get",
+        "path": "/people/3/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "vehicles": [
+            "https://swapi.co/api/vehicles/14/",
+            "https://swapi.co/api/vehicles/30/"
+          ],
+          "name": "Luke Skywalker",
+          "url": "https://swapi.co/api/people/1/",
+          "films": [
+            "https://swapi.co/api/films/2/",
+            "https://swapi.co/api/films/6/",
+            "https://swapi.co/api/films/3/",
+            "https://swapi.co/api/films/1/",
+            "https://swapi.co/api/films/7/"
+          ],
+          "mass": "77",
+          "gender": "male",
+          "eye_color": "blue",
+          "height": "172",
+          "hair_color": "blond",
+          "created": "2014-12-09T13:50:51.644000Z",
+          "edited": "2014-12-20T21:17:56.891000Z",
+          "skin_color": "fair",
+          "starships": [
+            "https://swapi.co/api/starships/12/",
+            "https://swapi.co/api/starships/22/"
+          ],
+          "birth_year": "19BBY",
+          "species": [
+            "https://swapi.co/api/species/1/"
+          ],
+          "homeworld": "https://swapi.co/api/planets/1/"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
