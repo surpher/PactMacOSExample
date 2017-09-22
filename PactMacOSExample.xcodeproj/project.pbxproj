@@ -16,8 +16,8 @@
 		AD6682041F72205F007A7D92 /* SwapiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6682031F72205F007A7D92 /* SwapiClient.swift */; };
 		AD6682051F722EFF007A7D92 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6682011F721FAB007A7D92 /* Alamofire.framework */; };
 		AD6682091F722EFF007A7D92 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6682061F722EFF007A7D92 /* Result.framework */; };
-		AD66820A1F722EFF007A7D92 /* PactConsumer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6682071F722EFF007A7D92 /* PactConsumer.framework */; };
 		AD66820B1F722EFF007A7D92 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6682081F722EFF007A7D92 /* BrightFutures.framework */; };
+		ADD04F741F7542B50018341B /* PactConsumerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD04F731F7542B50018341B /* PactConsumerSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +44,8 @@
 		AD6682011F721FAB007A7D92 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		AD6682031F72205F007A7D92 /* SwapiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapiClient.swift; sourceTree = "<group>"; };
 		AD6682061F722EFF007A7D92 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = SOURCE_ROOT; };
-		AD6682071F722EFF007A7D92 /* PactConsumer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PactConsumer.framework; path = Carthage/Build/Mac/PactConsumer.framework; sourceTree = SOURCE_ROOT; };
 		AD6682081F722EFF007A7D92 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/Mac/BrightFutures.framework; sourceTree = SOURCE_ROOT; };
+		ADD04F731F7542B50018341B /* PactConsumerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PactConsumerSwift.framework; path = Carthage/Build/Mac/PactConsumerSwift.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +62,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD6682091F722EFF007A7D92 /* Result.framework in Frameworks */,
-				AD66820A1F722EFF007A7D92 /* PactConsumer.framework in Frameworks */,
 				AD66820B1F722EFF007A7D92 /* BrightFutures.framework in Frameworks */,
 				AD6682051F722EFF007A7D92 /* Alamofire.framework in Frameworks */,
+				ADD04F741F7542B50018341B /* PactConsumerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,8 +116,8 @@
 		AD6682001F721F64007A7D92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ADD04F731F7542B50018341B /* PactConsumerSwift.framework */,
 				AD6682081F722EFF007A7D92 /* BrightFutures.framework */,
-				AD6682071F722EFF007A7D92 /* PactConsumer.framework */,
 				AD6682061F722EFF007A7D92 /* Result.framework */,
 				AD6682011F721FAB007A7D92 /* Alamofire.framework */,
 			);
@@ -246,7 +246,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/PactConsumer.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/PactConsumerSwift.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/BrightFutures.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/Result.framework",
 			);

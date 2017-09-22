@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import PactConsumer
+import PactConsumerSwift
 
 @testable import PactMacOSExample
 
@@ -30,7 +30,7 @@ class PactMacOSExampleTests: XCTestCase {
   
   func test_API_returnsCharacter() {
     // Prepare the expecated behaviour
-    starWarsProvider?.uponReceiving("a request for a character").withRequest(method: .GET, path: "/people/3/")
+    starWarsProvider!.uponReceiving("a request for a character").withRequest(method: .GET, path: "/people/3/")
         .willRespondWith(status: 200, headers: ["Content-Type": "application/json"], body: [
           "name": "Luke Skywalker",
           "height": "172",
@@ -63,9 +63,21 @@ class PactMacOSExampleTests: XCTestCase {
         ])
     
     // Run the test
-    starWarsProvider!.run { (testCompleted) -> Void in
+    starWarsProvider!.run(timeout: 10) { (testCompleted) -> Void in
       self.starWarsClient!.fetchStarWarsCharacter(id: 3) { (response, statusCode) -> Void in
         XCTAssertEqual(statusCode, 200)
+        testCompleted()
+      }
+    }
+  }
+  
+  func test_API_returnsError() {
+    starWarsProvider!.uponReceiving("an invalid request").withRequest(method: .GET, path: "/people/0/")
+      .willRespondWith(status: 400, headers: ["Content-Type": "application/json"], body: ["error": "bar"])
+    
+    starWarsProvider!.run(timeout: 10) { (testCompleted) -> Void in
+      self.starWarsClient!.fetchStarWarsCharacter(id: 0) { (response, statusCode) -> Void in
+        XCTAssertEqual(statusCode, 400)
         testCompleted()
       }
     }
