@@ -74,10 +74,10 @@
 		AD6681D51F72193D007A7D92 = {
 			isa = PBXGroup;
 			children = (
-				AD6682001F721F64007A7D92 /* Frameworks */,
 				AD6681E01F72193D007A7D92 /* PactMacOSExample */,
 				AD6681F31F72193D007A7D92 /* PactMacOSExampleTests */,
 				AD6681DF1F72193D007A7D92 /* Products */,
+				AD6682001F721F64007A7D92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

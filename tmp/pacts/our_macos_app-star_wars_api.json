@@ -50,22 +50,6 @@
           "homeworld": "https://swapi.co/api/planets/1/"
         }
       }
-    },
-    {
-      "description": "an invalid request",
-      "request": {
-        "method": "get",
-        "path": "/people/0/"
-      },
-      "response": {
-        "status": 400,
-        "headers": {
-          "Content-Type": "application/json"
-        },
-        "body": {
-          "error": "bar"
-        }
-      }
     }
   ],
   "metadata": {
