@@ -15,7 +15,11 @@ before_install:
   - carthage checkout
 before_script:
   - carthage bootstrap --platform macOS
+  - mkdir -p "./tmp"
+  - pact-mock-service start --pact-specification-version 2.0.0 --log "./tmp/pact.log" --pact-dir "./tmp/pacts" -p 1234
 script:
   - set -o pipefail
   - xcodebuild -version
   - xcodebuild -project $XCODE_PROJECT -scheme "$XCODE_SCHEME" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO test -enableCodeCoverage YES | xcpretty -tc;
+after_script:
+  - pact-mock-service stop
