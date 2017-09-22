@@ -37,11 +37,4 @@ xcuserdata/
 *.xccheckout
 *.xcscmblueprint
 
-### Xcode Patch ###
-*.xcodeproj/*
-!*.xcodeproj/project.pbxproj
-!*.xcodeproj/xcshareddata/
-!*.xcworkspace/contents.xcworkspacedata
-/*.gcno
-
 # End of https://www.gitignore.io/api/xcode,swiftpm
