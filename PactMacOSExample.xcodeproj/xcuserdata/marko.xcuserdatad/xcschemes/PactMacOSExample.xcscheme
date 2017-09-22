@@ -75,6 +75,10 @@
                BlueprintName = "PactMacOSExampleTests"
                ReferencedContainer = "container:PactMacOSExample.xcodeproj">
             </BuildableReference>
+            <LocationScenarioReference
+               identifier = "Sydney, Australia"
+               referenceType = "1">
+            </LocationScenarioReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
