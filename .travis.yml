@@ -1,8 +1,6 @@
 language: objective-c
 osx_image: xcode9
 before_install:
-  - scripts/import_keychain.sh
-  - security find-identity -v -p codesigning
   - gem install pact-mock_service -v 2.1.0
   - bundle install
   - brew update
