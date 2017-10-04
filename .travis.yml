@@ -20,6 +20,6 @@ before_script:
 script:
   - set -o pipefail
   - xcodebuild -version
-  - xcodebuild -project $XCODE_PROJECT -scheme $XCODE_SCHEME -destination $DESTINATION -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO test -enableCodeCoverage YES | xcpretty -tc;
+  - xcodebuild -project $XCODE_PROJECT -scheme $XCODE_SCHEME -destination $DESTINATION -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO test -enableCodeCoverage YES | xcpretty -c;
 after_script:
   - Carthage/Checkouts/pact-consumer-swift/scripts/stop_server.sh
