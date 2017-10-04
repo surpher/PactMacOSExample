@@ -6,7 +6,7 @@ os: "osx"
 env:
   global:
     - DESTINATION="arch=x86_64"
-    - XCODE_SCHEME="PactMacOSExample"
+    - XCODE_SCHEME="PactMacOSExampleTests"
     - XCODE_PROJECT="PactMacOSExample.xcodeproj"
 before_install:
   - gem install pact-mock_service -v 2.1.0
