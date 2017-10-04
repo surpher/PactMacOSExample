@@ -1,1 +1,1 @@
-github "DiUS/pact-consumer-swift.git" "macOS"
+github "DiUS/pact-consumer-swift.git" ~> 0.5
