@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  PactMacOSExample
-//
-//  Created by Marko Justinek on 20/9/17.
-//  Copyright © 2017 DiUS. All rights reserved.
-//
-
 import Cocoa
 
 class ViewController: NSViewController {
@@ -27,13 +19,10 @@ class ViewController: NSViewController {
   @IBAction func sendRequest(_ sender: Any) {
     self.responseTextView.textStorage?.mutableString.setString("fetching...")
     
-//    self.swapiClient.fetchStarWarsCharacter(id: 3) { (response, statusCode) -> Void in
-//      self.responseTextView.textStorage?.mutableString.setString("STATUS: \(statusCode)\n\(response)")
-//    }
-    
-    self.swapiClient.fetchStarWarsSpacecraft { (response, statusCode) -> Void in
-      self.responseTextView.textStorage?.mutableString.setString("STATUS: \(statusCode)\n\(response)")
+    self.swapiClient.fetchStarWarsCharacter(id: 1) { (response, statusCode) -> Void in
+      self.responseTextView.textStorage?.mutableString.setString("STATUS: \(statusCode)\n\n\(response)")
     }
+
   }
   
 }

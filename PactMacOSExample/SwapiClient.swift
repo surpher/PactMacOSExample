@@ -1,11 +1,3 @@
-//
-//  SwapiClient.swift
-//  PactMacOSExample
-//
-//  Created by Marko Justinek on 20/9/17.
-//  Copyright © 2017 DiUS. All rights reserved.
-//
-
 import Foundation
 import Alamofire
 
@@ -20,21 +12,20 @@ public class SwapiClient {
     self.baseUrl = baseUrl
   }
   
-  public func fetchStarWarsCharacter(id: Int = 1, completion: @escaping (Any, Int) -> Void) {
+  public func fetchStarWarsCharacter(id: Int = 4, completion: @escaping (Any, Int) -> Void) {
     Alamofire.request("\(baseUrl)/people/\(id)/", headers: self.headers)
       .responseJSON { response in
-        if let json = response.result.value, let statusCode = response.response?.statusCode {
-          completion(json, statusCode)
+        
+        if let data = response.data, let statusCode = response.response?.statusCode {
+          do {
+            let decoder = JSONDecoder()
+            let swCharacter = try decoder.decode(SWCharacter.self, from: data)
+            completion(swCharacter, statusCode)
+          } catch let error {
+            completion(error, statusCode)
+          }
         }
       }
   }
   
-  public func fetchStarWarsSpacecraft(id: Int = 9, completion: @escaping (Any,  Int) -> Void) {
-    Alamofire.request("\(baseUrl)/starships/\(id)/", headers: self.headers)
-      .responseJSON { response in
-        if let json = response.result.value, let statusCode = response.response?.statusCode {
-          completion(json, statusCode)
-        }
-    }
-  }
 }
