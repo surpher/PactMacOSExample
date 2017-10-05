@@ -5,7 +5,8 @@ public class SwapiClient {
   private let baseUrl: String
   
   private let headers = [
-    "Accept": "application/json"
+    "Accept": "application/json",
+    "Authorization": "Bearer xyz12345"
   ]
   
   public init(baseUrl: String) {
@@ -22,7 +23,11 @@ public class SwapiClient {
             let swCharacter = try decoder.decode(SWCharacter.self, from: data)
             completion(swCharacter, statusCode)
           } catch let error {
-            completion(error, statusCode)
+            guard let resultValue = response.result.value else {
+              completion(error, statusCode)
+              return
+            }
+            completion(resultValue, statusCode)
           }
         }
       }
