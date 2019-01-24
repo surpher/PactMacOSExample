@@ -7,9 +7,9 @@ An example macOS app demonstrating the use of PactConsumerSwift (https://github.
 
 ### Requirements
 
-- Xcode 9 and Swift 4
+- Xcode 10 and Swift 4
 - Carthage `brew install carthage`
-- Run `sudo gem install pact-mock_service -v 2.1.0` in your terminal.
+- Download [pact-ruby-standalone](https://github.com/pact-foundation/pact-ruby-standalone) (in this particular example project the binaries were moved to `$PROJ_DIR/tmp/pact/bin` where scheme test _pre-actions_ and _post-actions_ add the path to `$PATH`)
 
 ### Workflow
 - Create your MacOS app.
