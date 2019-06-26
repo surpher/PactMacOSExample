@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode10.1
+osx_image: xcode10.2
 group: "stable"
 dist: "osx"
 os: "osx"
@@ -9,17 +9,12 @@ env:
     - XCODE_SCHEME="PactMacOSExample"
     - XCODE_PROJECT="PactMacOSExample.xcodeproj"
 before_install:
-  - gem install pact-mock_service -v 2.1.0
-  - bundle install
-  - brew outdated carthage || brew upgrade carthage
-  - carthage checkout
+  - brew tap pact-foundation/pact-ruby-standalone
+  - brew install pact-ruby-standalone
 before_script:
   - carthage update --platform macOS --no-use-binaries
   - mkdir -p "./tmp"
-  - Carthage/Checkouts/pact-consumer-swift/scripts/start_server.sh
 script:
   - set -o pipefail
   - xcodebuild -version
   - xcodebuild -project $XCODE_PROJECT -scheme $XCODE_SCHEME -destination $DESTINATION -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO test -enableCodeCoverage YES | xcpretty -c;
-after_script:
-  - Carthage/Checkouts/pact-consumer-swift/scripts/stop_server.sh

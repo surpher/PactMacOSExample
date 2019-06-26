@@ -33,7 +33,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "mkdir -p ./tmp&#10;exec &gt; ./tmp/prebuild.log 2&gt;&amp;1&#10;&#10;PATH=&quot;${SRCROOT}/tmp/pact/bin/&quot;:$PATH&#10;pact-mock-service start --pact-specification-version 2.0.0 --log &quot;${SRCROOT}/tmp/pact.log&quot; --pact-dir &quot;${SRCROOT}/tmp/pacts&quot; -p 1234&#10;">
+               scriptText = "mkdir -p ./tmp&#10;exec &gt; ./tmp/prebuild.log 2&gt;&amp;1&#10;&#10;if which pact-mock-service &gt;/dev/null; then&#10;    pact-mock-service start --pact-specification-version 2.0.0 --log &quot;${SRCROOT}/tmp/pact.log&quot; --pact-dir &quot;${SRCROOT}/tmp/pacts&quot; -p 1234&#10;else&#10;    echo &quot;### ERROR ###: Missing dependency: pact-mock-service is not installed&quot;&#10;    return 1&#10;fi&#10;&#10;&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
@@ -51,7 +51,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "exec &gt; &quot;${SRCROOT}&quot;/prebuild.log 2&gt;&amp;1&#10;PATH=&quot;${SRCROOT}/tmp/pact/bin/&quot;:$PATH&#10;source &quot;${SRCROOT}&quot;/Carthage/Checkouts/pact-consumer-swift/scripts/stop_server.sh&#10;">
+               scriptText = "exec &gt; &quot;${SRCROOT}&quot;/prebuild.log 2&gt;&amp;1&#10;&#10;if which pact-mock-service &gt;/dev/null; then&#10;    pact-mock-service stop&#10;else&#10;    echo &quot;### ERROR ###: Missing dependency: pact-mock-service is not installed&quot;&#10;    return 1&#10;fi&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
