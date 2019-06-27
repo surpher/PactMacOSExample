@@ -18,11 +18,12 @@
 		AD6681E61F72193D007A7D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6681E51F72193D007A7D92 /* Assets.xcassets */; };
 		AD6681E91F72193D007A7D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6681E71F72193D007A7D92 /* Main.storyboard */; };
 		AD6681F51F72193D007A7D92 /* PactMacOSExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6681F41F72193D007A7D92 /* PactMacOSExampleTests.swift */; };
-		AD6682021F721FAB007A7D92 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6682011F721FAB007A7D92 /* Alamofire.framework */; };
 		AD6682041F72205F007A7D92 /* SwapiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6682031F72205F007A7D92 /* SwapiClient.swift */; };
 		AD6682051F722EFF007A7D92 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6682011F721FAB007A7D92 /* Alamofire.framework */; };
 		AD6682091F722EFF007A7D92 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6682061F722EFF007A7D92 /* Result.framework */; };
 		AD66820B1F722EFF007A7D92 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6682081F722EFF007A7D92 /* BrightFutures.framework */; };
+		AD824BB822C48DCB00261CF1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6682011F721FAB007A7D92 /* Alamofire.framework */; };
+		AD824BB922C48DCB00261CF1 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD6682011F721FAB007A7D92 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ADD04F741F7542B50018341B /* PactConsumerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD04F731F7542B50018341B /* PactConsumerSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,17 @@
 			);
 			name = "Copy used frameworks' dSYM files";
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		AD824BBA22C48DCB00261CF1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AD824BB922C48DCB00261CF1 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -83,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD6682021F721FAB007A7D92 /* Alamofire.framework in Frameworks */,
+				AD824BB822C48DCB00261CF1 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +182,7 @@
 				AD6681DA1F72193D007A7D92 /* Sources */,
 				AD6681DB1F72193D007A7D92 /* Frameworks */,
 				AD6681DC1F72193D007A7D92 /* Resources */,
+				AD824BBA22C48DCB00261CF1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
