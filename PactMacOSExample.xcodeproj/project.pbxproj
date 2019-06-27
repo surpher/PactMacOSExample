@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		AD306B7B1F84C4E4002C2A96 /* SWCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD306B7A1F84C4E4002C2A96 /* SWCharacter.swift */; };
+		AD37365922C4807C00790726 /* Nimble.framework.dSYM in Copy used frameworks' dSYM files */ = {isa = PBXBuildFile; fileRef = AD37365422C4807C00790726 /* Nimble.framework.dSYM */; };
+		AD37365A22C4807C00790726 /* Alamofire.framework.dSYM in Copy used frameworks' dSYM files */ = {isa = PBXBuildFile; fileRef = AD37365522C4807C00790726 /* Alamofire.framework.dSYM */; };
+		AD37365B22C4807C00790726 /* PactConsumerSwift.framework.dSYM in Copy used frameworks' dSYM files */ = {isa = PBXBuildFile; fileRef = AD37365622C4807C00790726 /* PactConsumerSwift.framework.dSYM */; };
+		AD37365C22C4807C00790726 /* BrightFutures.framework.dSYM in Copy used frameworks' dSYM files */ = {isa = PBXBuildFile; fileRef = AD37365722C4807C00790726 /* BrightFutures.framework.dSYM */; };
+		AD37365D22C4807C00790726 /* Result.framework.dSYM in Copy used frameworks' dSYM files */ = {isa = PBXBuildFile; fileRef = AD37365822C4807C00790726 /* Result.framework.dSYM */; };
 		AD6681E21F72193D007A7D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6681E11F72193D007A7D92 /* AppDelegate.swift */; };
 		AD6681E41F72193D007A7D92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6681E31F72193D007A7D92 /* ViewController.swift */; };
 		AD6681E61F72193D007A7D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6681E51F72193D007A7D92 /* Assets.xcassets */; };
@@ -31,8 +36,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AD37364822C47F4300790726 /* Copy used frameworks' dSYM files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = dSYMs;
+			dstSubfolderSpec = 7;
+			files = (
+				AD37365922C4807C00790726 /* Nimble.framework.dSYM in Copy used frameworks' dSYM files */,
+				AD37365A22C4807C00790726 /* Alamofire.framework.dSYM in Copy used frameworks' dSYM files */,
+				AD37365B22C4807C00790726 /* PactConsumerSwift.framework.dSYM in Copy used frameworks' dSYM files */,
+				AD37365C22C4807C00790726 /* BrightFutures.framework.dSYM in Copy used frameworks' dSYM files */,
+				AD37365D22C4807C00790726 /* Result.framework.dSYM in Copy used frameworks' dSYM files */,
+			);
+			name = "Copy used frameworks' dSYM files";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		AD306B7A1F84C4E4002C2A96 /* SWCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCharacter.swift; sourceTree = "<group>"; };
+		AD37365422C4807C00790726 /* Nimble.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Nimble.framework.dSYM; path = Carthage/Build/Mac/Nimble.framework.dSYM; sourceTree = "<group>"; };
+		AD37365522C4807C00790726 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/Mac/Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		AD37365622C4807C00790726 /* PactConsumerSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = PactConsumerSwift.framework.dSYM; path = Carthage/Build/Mac/PactConsumerSwift.framework.dSYM; sourceTree = "<group>"; };
+		AD37365722C4807C00790726 /* BrightFutures.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = BrightFutures.framework.dSYM; path = Carthage/Build/Mac/BrightFutures.framework.dSYM; sourceTree = "<group>"; };
+		AD37365822C4807C00790726 /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/Mac/Result.framework.dSYM; sourceTree = "<group>"; };
 		AD6681DE1F72193D007A7D92 /* PactMacOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PactMacOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6681E11F72193D007A7D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD6681E31F72193D007A7D92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +104,11 @@
 		AD6681D51F72193D007A7D92 = {
 			isa = PBXGroup;
 			children = (
+				AD37365522C4807C00790726 /* Alamofire.framework.dSYM */,
+				AD37365722C4807C00790726 /* BrightFutures.framework.dSYM */,
+				AD37365422C4807C00790726 /* Nimble.framework.dSYM */,
+				AD37365622C4807C00790726 /* PactConsumerSwift.framework.dSYM */,
+				AD37365822C4807C00790726 /* Result.framework.dSYM */,
 				AD6681E01F72193D007A7D92 /* PactMacOSExample */,
 				AD6681F31F72193D007A7D92 /* PactMacOSExampleTests */,
 				AD6681DF1F72193D007A7D92 /* Products */,
@@ -137,7 +170,6 @@
 				AD6681DA1F72193D007A7D92 /* Sources */,
 				AD6681DB1F72193D007A7D92 /* Frameworks */,
 				AD6681DC1F72193D007A7D92 /* Resources */,
-				AD6681FF1F721F57007A7D92 /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,7 +187,7 @@
 				AD6681EC1F72193D007A7D92 /* Sources */,
 				AD6681ED1F72193D007A7D92 /* Frameworks */,
 				AD6681EE1F72193D007A7D92 /* Resources */,
-				AD66820D1F72306F007A7D92 /* Copy Carthage Frameworks */,
+				AD37364822C47F4300790726 /* Copy used frameworks' dSYM files */,
 			);
 			buildRules = (
 			);
@@ -179,10 +211,12 @@
 				TargetAttributes = {
 					AD6681DD1F72193D007A7D92 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					AD6681EF1F72193D007A7D92 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = AD6681DD1F72193D007A7D92;
 					};
@@ -225,42 +259,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		AD6681FF1F721F57007A7D92 /* Copy Carthage Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
-			);
-			name = "Copy Carthage Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "PATH=/usr/local/bin:$PATH\ncarthage copy-frameworks\n";
-		};
-		AD66820D1F72306F007A7D92 /* Copy Carthage Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/PactConsumerSwift.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/BrightFutures.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/Result.framework",
-			);
-			name = "Copy Carthage Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "PATH=/usr/local/bin:$PATH\ncarthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD6681DA1F72193D007A7D92 /* Sources */ = {
@@ -430,7 +428,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fiftyoneapps.pact.PactMacOSExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -448,7 +446,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fiftyoneapps.pact.PactMacOSExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -467,7 +465,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(PROJECT_DIR)/Carthage/Build/Mac/";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fiftyoneapps.pact.PactMacOSExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PactMacOSExample.app/Contents/MacOS/PactMacOSExample";
 			};
 			name = Debug;
@@ -487,7 +485,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(PROJECT_DIR)/Carthage/Build/Mac/";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fiftyoneapps.pact.PactMacOSExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PactMacOSExample.app/Contents/MacOS/PactMacOSExample";
 			};
 			name = Release;
