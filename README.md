@@ -1,5 +1,5 @@
 # PactMacOSExample
-[![Build Status](https://travis-ci.org/surpher/PactMacOSExample.svg?branch=master)](https://travis-ci.org/surpher/PactMacOSExample)
+[![Build](https://github.com/surpher/PactMacOSExample/workflows/Build/badge.svg)](https://github.com/surpher/PactMacOSExample/actions?query=workflow%3ABuild)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 ![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat)  
 
