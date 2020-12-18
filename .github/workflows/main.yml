@@ -1,0 +1,35 @@
+name: Build
+
+on: [push, workflow_dispatch, repository_dispatch]
+
+env:
+  DESTINATION: "arch=x86_64"
+  XCODE_SCHEME: "PactMacOSExample"
+  XCODE_PROJECT: "PactMacOSExample.xcodeproj"
+
+jobs:
+  test_macOS:
+    name: Test macOS project
+    runs-on: macOS-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+
+      - name: Use Xcode 12
+        run: sudo xcode-select -switch /Applications/Xcode_12.2.app
+
+      - name: Prepare tools
+        run: |
+          brew tap pact-foundation/pact-ruby-standalone
+          brew tap thii/xcbeautify https://github.com/thii/xcbeautify.git
+          brew install pact-ruby-standalone swiftlint xcbeautify
+
+      - name: Run tests
+        run: |
+          carthage update --platform macos --no-use-binaries
+          mkdir -p "./tmp"
+          xcodebuild -project $XCODE_PROJECT -scheme $XCODE_SCHEME -destination $DESTINATION -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO test -enableCodeCoverage YES | xcbeautify
+
