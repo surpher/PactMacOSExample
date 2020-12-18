@@ -29,7 +29,7 @@ jobs:
 
       - name: Run tests
         run: |
-          carthage update --platform macos --no-use-binaries
+          scripts/carthage_xcode12 update --platform macos --no-use-binaries
           mkdir -p "./tmp"
           xcodebuild -project $XCODE_PROJECT -scheme $XCODE_SCHEME -destination $DESTINATION -configuration Debug ONLY_ACTIVE_ARCH=NO ENABLE_TESTABILITY=YES CODE_SIGNING_REQUIRED=NO test -enableCodeCoverage YES | xcbeautify
 
