@@ -4,7 +4,7 @@ import Alamofire
 public class SwapiClient {
   private let baseUrl: String
   
-  private let headers = [
+	private let headers: HTTPHeaders = [
     "Accept": "application/json",
     "Authorization": "Bearer xyz12345"
   ]
@@ -16,7 +16,7 @@ public class SwapiClient {
   public func fetchStarWarsCharacter(id: Int = 4, completion: @escaping (Any, Int) -> Void) {
     Alamofire.request("\(baseUrl)/people/\(id)/", headers: self.headers)
       .responseJSON { response in
-        
+
         if let data = response.data, let statusCode = response.response?.statusCode {
           do {
             let decoder = JSONDecoder()

@@ -54,7 +54,7 @@ class PactMacOSExampleTests: XCTestCase {
       ])
     
     // Run the test
-    starWarsProvider!.run(timeout: 10) { (testCompleted) -> Void in
+    starWarsProvider!.run(timeout: 1) { (testCompleted) -> Void in
       self.starWarsClient!.fetchStarWarsCharacter(id: 1) { (response, statusCode) -> Void in
         XCTAssertEqual(statusCode, 200)
         
@@ -85,7 +85,7 @@ class PactMacOSExampleTests: XCTestCase {
                        headers: ["Content-Type": "application/json"],
                        body: ["detail": Matcher.somethingLike("Not Found")])
     
-    starWarsProvider!.run(timeout: 10) { (testCompleted) -> Void in
+    starWarsProvider!.run(timeout: 1) { (testCompleted) -> Void in
       self.starWarsClient!.fetchStarWarsCharacter(id: 0) { (response, statusCode) -> Void in
         XCTAssertEqual(statusCode, 404)
         XCTAssertNotNil(response)

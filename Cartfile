@@ -1,2 +1,2 @@
-github "DiUS/pact-consumer-swift.git" ~> 0.6
+github "DiUS/pact-consumer-swift.git"
 github "Alamofire/Alamofire" ~> 4.8

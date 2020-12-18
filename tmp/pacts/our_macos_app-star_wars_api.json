@@ -10,7 +10,16 @@
       "description": "a request for a character",
       "request": {
         "method": "get",
-        "path": "/people/1/"
+        "path": "/people/1/",
+        "headers": {
+          "Authorization": "Bearer",
+          "Accept": "application/json"
+        },
+        "matchingRules": {
+          "$.headers.Authorization": {
+            "match": "type"
+          }
+        }
       },
       "response": {
         "status": 200,
@@ -18,41 +27,34 @@
           "Content-Type": "application/json"
         },
         "body": {
-          "vehicles": [
-            "https://swapi.co/api/vehicles/14/",
-            "https://swapi.co/api/vehicles/30/"
-          ],
-          "name": "Luke Skywalker",
-          "url": "https://swapi.co/api/people/1/",
+          "hair_color": "blond",
+          "birth_year": "19BBY",
+          "homeworld": "https://swapi.co/api/planets/1/",
           "films": [
             "https://swapi.co/api/films/2/"
           ],
-          "mass": "77",
-          "gender": "n/a",
           "eye_color": "blue",
-          "height": "172",
-          "hair_color": "blond",
           "created": "2014-12-09T13:50:51.644000Z",
-          "edited": "2014-12-20T21:17:56.891000Z",
+          "gender": "n/a",
           "skin_color": "fair",
           "starships": [
             "https://swapi.co/api/starships/12/",
             "https://swapi.co/api/starships/22/"
           ],
-          "birth_year": "19BBY",
+          "name": "Luke Skywalker",
+          "vehicles": [
+            "https://swapi.co/api/vehicles/14/",
+            "https://swapi.co/api/vehicles/30/"
+          ],
           "species": [
             "https://swapi.co/api/species/1/"
           ],
-          "homeworld": "https://swapi.co/api/planets/1/"
+          "edited": "2014-12-20T21:17:56.891000Z",
+          "url": "https://swapi.co/api/people/1/",
+          "height": "172",
+          "mass": "77"
         },
         "matchingRules": {
-          "$.body.name": {
-            "match": "type"
-          },
-          "$.body.url": {
-            "match": "regex",
-            "regex": "^https?:\\/\\/*"
-          },
           "$.body.films": {
             "min": 1
           },
@@ -63,14 +65,51 @@
             "match": "regex",
             "regex": "(male|female|n\\/a)"
           },
-          "$.body.edited": {
-            "match": "regex",
-            "regex": "\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}.\\d{,6}Z"
+          "$.body.name": {
+            "match": "type"
           },
           "$.body.species": {
             "min": 1
           },
           "$.body.species[*].*": {
+            "match": "type"
+          },
+          "$.body.edited": {
+            "match": "regex",
+            "regex": "\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}.\\d{,6}Z"
+          },
+          "$.body.url": {
+            "match": "regex",
+            "regex": "^https?:\\/\\/*"
+          }
+        }
+      }
+    },
+    {
+      "description": "an invalid request",
+      "request": {
+        "method": "get",
+        "path": "/people/0/",
+        "headers": {
+          "Authorization": "Bearer",
+          "Accept": "application/json"
+        },
+        "matchingRules": {
+          "$.headers.Authorization": {
+            "match": "type"
+          }
+        }
+      },
+      "response": {
+        "status": 404,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "detail": "Not Found"
+        },
+        "matchingRules": {
+          "$.body.detail": {
             "match": "type"
           }
         }
