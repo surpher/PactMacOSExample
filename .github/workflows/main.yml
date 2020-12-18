@@ -21,6 +21,15 @@ jobs:
       - name: Use Xcode 12
         run: sudo xcode-select -switch /Applications/Xcode_12.2.app
 
+      - name: "Cache dependencies"
+        uses: actions/cache@v2
+        with:
+          path: Carthage/build
+          key: ${{ runner.os }}-pactmacOsExample-${{ hashFiles('**/Cartfile.resolved') }}
+          restore-keys: |
+            ${{ runner.os }}-pactmacOsExample-
+            ${{ runner.os }}-
+
       - name: Prepare tools
         run: |
           brew tap pact-foundation/pact-ruby-standalone
