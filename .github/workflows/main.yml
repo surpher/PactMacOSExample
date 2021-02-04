@@ -1,6 +1,11 @@
 name: Build
 
-on: [push, workflow_dispatch, repository_dispatch]
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+  repository_dispatch:
 
 env:
   DESTINATION: "arch=x86_64"
@@ -18,8 +23,8 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Use Xcode 12
-        run: sudo xcode-select -switch /Applications/Xcode_12.2.app
+      - name: Use Xcode 12.4
+        run: sudo xcode-select -switch /Applications/Xcode_12.4.app
 
       - name: "Cache dependencies"
         uses: actions/cache@v2
