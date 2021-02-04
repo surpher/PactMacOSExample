@@ -12,8 +12,8 @@
         "method": "get",
         "path": "/people/1/",
         "headers": {
-          "Authorization": "Bearer",
-          "Accept": "application/json"
+          "Accept": "application/json",
+          "Authorization": "Bearer"
         },
         "matchingRules": {
           "$.headers.Authorization": {
@@ -27,56 +27,56 @@
           "Content-Type": "application/json"
         },
         "body": {
-          "hair_color": "blond",
           "birth_year": "19BBY",
-          "homeworld": "https://swapi.co/api/planets/1/",
-          "films": [
-            "https://swapi.co/api/films/2/"
+          "species": [
+            "https://swapi.co/api/species/1/"
           ],
-          "eye_color": "blue",
-          "created": "2014-12-09T13:50:51.644000Z",
-          "gender": "n/a",
-          "skin_color": "fair",
           "starships": [
             "https://swapi.co/api/starships/12/",
             "https://swapi.co/api/starships/22/"
           ],
+          "gender": "n/a",
+          "films": [
+            "https://swapi.co/api/films/2/"
+          ],
+          "skin_color": "fair",
+          "hair_color": "blond",
+          "created": "2014-12-09T13:50:51.644000Z",
+          "edited": "2014-12-20T21:17:56.891000Z",
           "name": "Luke Skywalker",
+          "homeworld": "https://swapi.co/api/planets/1/",
+          "url": "https://swapi.co/api/people/1/",
+          "eye_color": "blue",
+          "mass": "77",
           "vehicles": [
             "https://swapi.co/api/vehicles/14/",
             "https://swapi.co/api/vehicles/30/"
           ],
-          "species": [
-            "https://swapi.co/api/species/1/"
-          ],
-          "edited": "2014-12-20T21:17:56.891000Z",
-          "url": "https://swapi.co/api/people/1/",
-          "height": "172",
-          "mass": "77"
+          "height": "172"
         },
         "matchingRules": {
-          "$.body.films": {
-            "min": 1
-          },
-          "$.body.films[*].*": {
-            "match": "type"
-          },
-          "$.body.gender": {
-            "match": "regex",
-            "regex": "(male|female|n\\/a)"
-          },
-          "$.body.name": {
-            "match": "type"
-          },
           "$.body.species": {
             "min": 1
           },
           "$.body.species[*].*": {
             "match": "type"
           },
+          "$.body.gender": {
+            "match": "regex",
+            "regex": "(male|female|n\\/a)"
+          },
+          "$.body.films": {
+            "min": 1
+          },
+          "$.body.films[*].*": {
+            "match": "type"
+          },
           "$.body.edited": {
             "match": "regex",
             "regex": "\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}.\\d{,6}Z"
+          },
+          "$.body.name": {
+            "match": "type"
           },
           "$.body.url": {
             "match": "regex",
