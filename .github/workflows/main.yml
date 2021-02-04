@@ -34,7 +34,7 @@ jobs:
         run: |
           brew tap pact-foundation/pact-ruby-standalone
           brew tap thii/xcbeautify https://github.com/thii/xcbeautify.git
-          brew install pact-ruby-standalone swiftlint xcbeautify
+          brew install pact-ruby-standalone xcbeautify
 
       - name: Run tests
         run: |
