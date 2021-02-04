@@ -38,3 +38,6 @@ xcuserdata/
 *.xcscmblueprint
 
 # End of https://www.gitignore.io/api/xcode,swiftpm
+.DS_Store
+/tmp/pact.log
+/prebuild.log
