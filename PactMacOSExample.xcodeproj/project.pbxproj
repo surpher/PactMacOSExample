@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AD306B7B1F84C4E4002C2A96 /* SWCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD306B7A1F84C4E4002C2A96 /* SWCharacter.swift */; };
-		AD37365922C4807C00790726 /* Nimble.framework.dSYM in Copy used frameworks' dSYM files */ = {isa = PBXBuildFile; fileRef = AD37365422C4807C00790726 /* Nimble.framework.dSYM */; };
 		AD37365A22C4807C00790726 /* Alamofire.framework.dSYM in Copy used frameworks' dSYM files */ = {isa = PBXBuildFile; fileRef = AD37365522C4807C00790726 /* Alamofire.framework.dSYM */; };
 		AD37365B22C4807C00790726 /* PactConsumerSwift.framework.dSYM in Copy used frameworks' dSYM files */ = {isa = PBXBuildFile; fileRef = AD37365622C4807C00790726 /* PactConsumerSwift.framework.dSYM */; };
-		AD37365D22C4807C00790726 /* Result.framework.dSYM in Copy used frameworks' dSYM files */ = {isa = PBXBuildFile; fileRef = AD37365822C4807C00790726 /* Result.framework.dSYM */; };
 		AD6681E21F72193D007A7D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6681E11F72193D007A7D92 /* AppDelegate.swift */; };
 		AD6681E41F72193D007A7D92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6681E31F72193D007A7D92 /* ViewController.swift */; };
 		AD6681E61F72193D007A7D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6681E51F72193D007A7D92 /* Assets.xcassets */; };
@@ -19,7 +17,6 @@
 		AD6681F51F72193D007A7D92 /* PactMacOSExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6681F41F72193D007A7D92 /* PactMacOSExampleTests.swift */; };
 		AD6682041F72205F007A7D92 /* SwapiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6682031F72205F007A7D92 /* SwapiClient.swift */; };
 		AD6682051F722EFF007A7D92 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6682011F721FAB007A7D92 /* Alamofire.framework */; };
-		AD6682091F722EFF007A7D92 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6682061F722EFF007A7D92 /* Result.framework */; };
 		AD824BB822C48DCB00261CF1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6682011F721FAB007A7D92 /* Alamofire.framework */; };
 		AD824BB922C48DCB00261CF1 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD6682011F721FAB007A7D92 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ADD04F741F7542B50018341B /* PactConsumerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD04F731F7542B50018341B /* PactConsumerSwift.framework */; };
@@ -42,10 +39,8 @@
 			dstPath = dSYMs;
 			dstSubfolderSpec = 7;
 			files = (
-				AD37365922C4807C00790726 /* Nimble.framework.dSYM in Copy used frameworks' dSYM files */,
 				AD37365A22C4807C00790726 /* Alamofire.framework.dSYM in Copy used frameworks' dSYM files */,
 				AD37365B22C4807C00790726 /* PactConsumerSwift.framework.dSYM in Copy used frameworks' dSYM files */,
-				AD37365D22C4807C00790726 /* Result.framework.dSYM in Copy used frameworks' dSYM files */,
 			);
 			name = "Copy used frameworks' dSYM files";
 			runOnlyForDeploymentPostprocessing = 1;
@@ -65,10 +60,8 @@
 
 /* Begin PBXFileReference section */
 		AD306B7A1F84C4E4002C2A96 /* SWCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCharacter.swift; sourceTree = "<group>"; };
-		AD37365422C4807C00790726 /* Nimble.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Nimble.framework.dSYM; path = Carthage/Build/Mac/Nimble.framework.dSYM; sourceTree = "<group>"; };
 		AD37365522C4807C00790726 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/Mac/Alamofire.framework.dSYM; sourceTree = "<group>"; };
 		AD37365622C4807C00790726 /* PactConsumerSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = PactConsumerSwift.framework.dSYM; path = Carthage/Build/Mac/PactConsumerSwift.framework.dSYM; sourceTree = "<group>"; };
-		AD37365822C4807C00790726 /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/Mac/Result.framework.dSYM; sourceTree = "<group>"; };
 		AD6681DE1F72193D007A7D92 /* PactMacOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PactMacOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6681E11F72193D007A7D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD6681E31F72193D007A7D92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,8 +74,6 @@
 		AD6681F61F72193D007A7D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD6682011F721FAB007A7D92 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		AD6682031F72205F007A7D92 /* SwapiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapiClient.swift; sourceTree = "<group>"; };
-		AD6682061F722EFF007A7D92 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = SOURCE_ROOT; };
-		AD6682081F722EFF007A7D92 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/Mac/BrightFutures.framework; sourceTree = SOURCE_ROOT; };
 		ADD04F731F7542B50018341B /* PactConsumerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PactConsumerSwift.framework; path = Carthage/Build/Mac/PactConsumerSwift.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -99,7 +90,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD6682091F722EFF007A7D92 /* Result.framework in Frameworks */,
 				AD6682051F722EFF007A7D92 /* Alamofire.framework in Frameworks */,
 				ADD04F741F7542B50018341B /* PactConsumerSwift.framework in Frameworks */,
 			);
@@ -112,9 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				AD37365522C4807C00790726 /* Alamofire.framework.dSYM */,
-				AD37365422C4807C00790726 /* Nimble.framework.dSYM */,
 				AD37365622C4807C00790726 /* PactConsumerSwift.framework.dSYM */,
-				AD37365822C4807C00790726 /* Result.framework.dSYM */,
 				AD6681E01F72193D007A7D92 /* PactMacOSExample */,
 				AD6681F31F72193D007A7D92 /* PactMacOSExampleTests */,
 				AD6681DF1F72193D007A7D92 /* Products */,
@@ -159,8 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				ADD04F731F7542B50018341B /* PactConsumerSwift.framework */,
-				AD6682081F722EFF007A7D92 /* BrightFutures.framework */,
-				AD6682061F722EFF007A7D92 /* Result.framework */,
 				AD6682011F721FAB007A7D92 /* Alamofire.framework */,
 			);
 			path = Frameworks;
