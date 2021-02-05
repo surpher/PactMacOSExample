@@ -88,15 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AD841B4825CCFE6F00FC008F /* Network */ = {
+		ADBF60D425CD6B590032FFC8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				AD841B4325CCFE6900FC008F /* SWAPIClient.swift */,
 			);
-			path = Network;
+			name = Network;
 			sourceTree = "<group>";
 		};
-		AD841B4C25CCFEE900FC008F /* Model */ = {
+		ADBF60D825CD6B670032FFC8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				AD841B4D25CCFEF400FC008F /* SWPerson.swift */,
@@ -104,7 +104,18 @@
 				AD37D59E25CD38C800C5C9A3 /* SWStarships.swift */,
 				AD37D5A825CD5AFD00C5C9A3 /* SWStarshipsList.swift */,
 			);
-			path = Model;
+			name = Model;
+			sourceTree = "<group>";
+		};
+		ADBF60D925CD6B800032FFC8 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				ADCBF9B825CCD70C0040F10A /* Assets.xcassets */,
+				ADCBF9BA25CCD70C0040F10A /* Main.storyboard */,
+				ADCBF9BD25CCD70C0040F10A /* Info.plist */,
+				ADCBF9BE25CCD70C0040F10A /* PactMacOSExample.entitlements */,
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 		ADCBF9A825CCD70C0040F10A = {
@@ -131,14 +142,11 @@
 		ADCBF9B325CCD70C0040F10A /* PactMacOSExample */ = {
 			isa = PBXGroup;
 			children = (
-				AD841B4825CCFE6F00FC008F /* Network */,
-				AD841B4C25CCFEE900FC008F /* Model */,
 				ADCBF9B425CCD70C0040F10A /* AppDelegate.swift */,
 				ADCBF9B625CCD70C0040F10A /* ViewController.swift */,
-				ADCBF9B825CCD70C0040F10A /* Assets.xcassets */,
-				ADCBF9BA25CCD70C0040F10A /* Main.storyboard */,
-				ADCBF9BD25CCD70C0040F10A /* Info.plist */,
-				ADCBF9BE25CCD70C0040F10A /* PactMacOSExample.entitlements */,
+				ADBF60D825CD6B670032FFC8 /* Model */,
+				ADBF60D425CD6B590032FFC8 /* Network */,
+				ADBF60D925CD6B800032FFC8 /* Support */,
 			);
 			path = PactMacOSExample;
 			sourceTree = "<group>";
