@@ -524,7 +524,7 @@
 					"@loader_path/../Frameworks",
 					"$(FRAMEWORK_SEARCH_PATHS)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pact-foundation.PactSwift.PactMacOSExampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -550,7 +550,7 @@
 					"@loader_path/../Frameworks",
 					"$(FRAMEWORK_SEARCH_PATHS)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pact-foundation.PactSwift.PactMacOSExampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
