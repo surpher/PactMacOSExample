@@ -44,3 +44,4 @@ xcuserdata/
 .DS_Store
 /tmp/pact.log
 /prebuild.log
+/tmp/pacts-ssl/thisapp-swapi.json
