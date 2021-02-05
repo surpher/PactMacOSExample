@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADCBF9B525CCD70C0040F10A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBF9B425CCD70C0040F10A /* AppDelegate.swift */; };
+		ADCBF9B725CCD70C0040F10A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBF9B625CCD70C0040F10A /* ViewController.swift */; };
+		ADCBF9B925CCD70C0040F10A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADCBF9B825CCD70C0040F10A /* Assets.xcassets */; };
+		ADCBF9BC25CCD70C0040F10A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCBF9BA25CCD70C0040F10A /* Main.storyboard */; };
+		ADCBF9C825CCD70C0040F10A /* PactMacOSExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBF9C725CCD70C0040F10A /* PactMacOSExampleTests.swift */; };
+		ADCBF9D325CCD70C0040F10A /* PactMacOSExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBF9D225CCD70C0040F10A /* PactMacOSExampleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADCBF9C425CCD70C0040F10A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADCBF9A925CCD70C0040F10A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADCBF9B025CCD70C0040F10A;
+			remoteInfo = PactMacOSExample;
+		};
+		ADCBF9CF25CCD70C0040F10A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADCBF9A925CCD70C0040F10A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADCBF9B025CCD70C0040F10A;
+			remoteInfo = PactMacOSExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADCBF9B125CCD70C0040F10A /* PactMacOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PactMacOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCBF9B425CCD70C0040F10A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADCBF9B625CCD70C0040F10A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADCBF9B825CCD70C0040F10A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADCBF9BB25CCD70C0040F10A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADCBF9BD25CCD70C0040F10A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADCBF9BE25CCD70C0040F10A /* PactMacOSExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PactMacOSExample.entitlements; sourceTree = "<group>"; };
+		ADCBF9C325CCD70C0040F10A /* PactMacOSExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PactMacOSExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCBF9C725CCD70C0040F10A /* PactMacOSExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PactMacOSExampleTests.swift; sourceTree = "<group>"; };
+		ADCBF9C925CCD70C0040F10A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADCBF9CE25CCD70C0040F10A /* PactMacOSExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PactMacOSExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCBF9D225CCD70C0040F10A /* PactMacOSExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PactMacOSExampleUITests.swift; sourceTree = "<group>"; };
+		ADCBF9D425CCD70D0040F10A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADCBF9AE25CCD70C0040F10A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCBF9C025CCD70C0040F10A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCBF9CB25CCD70C0040F10A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADCBF9A825CCD70C0040F10A = {
+			isa = PBXGroup;
+			children = (
+				ADCBF9B325CCD70C0040F10A /* PactMacOSExample */,
+				ADCBF9C625CCD70C0040F10A /* PactMacOSExampleTests */,
+				ADCBF9D125CCD70C0040F10A /* PactMacOSExampleUITests */,
+				ADCBF9B225CCD70C0040F10A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADCBF9B225CCD70C0040F10A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADCBF9B125CCD70C0040F10A /* PactMacOSExample.app */,
+				ADCBF9C325CCD70C0040F10A /* PactMacOSExampleTests.xctest */,
+				ADCBF9CE25CCD70C0040F10A /* PactMacOSExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADCBF9B325CCD70C0040F10A /* PactMacOSExample */ = {
+			isa = PBXGroup;
+			children = (
+				ADCBF9B425CCD70C0040F10A /* AppDelegate.swift */,
+				ADCBF9B625CCD70C0040F10A /* ViewController.swift */,
+				ADCBF9B825CCD70C0040F10A /* Assets.xcassets */,
+				ADCBF9BA25CCD70C0040F10A /* Main.storyboard */,
+				ADCBF9BD25CCD70C0040F10A /* Info.plist */,
+				ADCBF9BE25CCD70C0040F10A /* PactMacOSExample.entitlements */,
+			);
+			path = PactMacOSExample;
+			sourceTree = "<group>";
+		};
+		ADCBF9C625CCD70C0040F10A /* PactMacOSExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADCBF9C725CCD70C0040F10A /* PactMacOSExampleTests.swift */,
+				ADCBF9C925CCD70C0040F10A /* Info.plist */,
+			);
+			path = PactMacOSExampleTests;
+			sourceTree = "<group>";
+		};
+		ADCBF9D125CCD70C0040F10A /* PactMacOSExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADCBF9D225CCD70C0040F10A /* PactMacOSExampleUITests.swift */,
+				ADCBF9D425CCD70D0040F10A /* Info.plist */,
+			);
+			path = PactMacOSExampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADCBF9B025CCD70C0040F10A /* PactMacOSExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADCBF9D725CCD70D0040F10A /* Build configuration list for PBXNativeTarget "PactMacOSExample" */;
+			buildPhases = (
+				ADCBF9AD25CCD70C0040F10A /* Sources */,
+				ADCBF9AE25CCD70C0040F10A /* Frameworks */,
+				ADCBF9AF25CCD70C0040F10A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PactMacOSExample;
+			productName = PactMacOSExample;
+			productReference = ADCBF9B125CCD70C0040F10A /* PactMacOSExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADCBF9C225CCD70C0040F10A /* PactMacOSExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADCBF9DA25CCD70D0040F10A /* Build configuration list for PBXNativeTarget "PactMacOSExampleTests" */;
+			buildPhases = (
+				ADCBF9BF25CCD70C0040F10A /* Sources */,
+				ADCBF9C025CCD70C0040F10A /* Frameworks */,
+				ADCBF9C125CCD70C0040F10A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADCBF9C525CCD70C0040F10A /* PBXTargetDependency */,
+			);
+			name = PactMacOSExampleTests;
+			productName = PactMacOSExampleTests;
+			productReference = ADCBF9C325CCD70C0040F10A /* PactMacOSExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADCBF9CD25CCD70C0040F10A /* PactMacOSExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADCBF9DD25CCD70D0040F10A /* Build configuration list for PBXNativeTarget "PactMacOSExampleUITests" */;
+			buildPhases = (
+				ADCBF9CA25CCD70C0040F10A /* Sources */,
+				ADCBF9CB25CCD70C0040F10A /* Frameworks */,
+				ADCBF9CC25CCD70C0040F10A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADCBF9D025CCD70C0040F10A /* PBXTargetDependency */,
+			);
+			name = PactMacOSExampleUITests;
+			productName = PactMacOSExampleUITests;
+			productReference = ADCBF9CE25CCD70C0040F10A /* PactMacOSExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADCBF9A925CCD70C0040F10A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					ADCBF9B025CCD70C0040F10A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					ADCBF9C225CCD70C0040F10A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = ADCBF9B025CCD70C0040F10A;
+					};
+					ADCBF9CD25CCD70C0040F10A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = ADCBF9B025CCD70C0040F10A;
+					};
+				};
+			};
+			buildConfigurationList = ADCBF9AC25CCD70C0040F10A /* Build configuration list for PBXProject "PactMacOSExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADCBF9A825CCD70C0040F10A;
+			productRefGroup = ADCBF9B225CCD70C0040F10A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADCBF9B025CCD70C0040F10A /* PactMacOSExample */,
+				ADCBF9C225CCD70C0040F10A /* PactMacOSExampleTests */,
+				ADCBF9CD25CCD70C0040F10A /* PactMacOSExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADCBF9AF25CCD70C0040F10A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCBF9B925CCD70C0040F10A /* Assets.xcassets in Resources */,
+				ADCBF9BC25CCD70C0040F10A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCBF9C125CCD70C0040F10A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCBF9CC25CCD70C0040F10A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADCBF9AD25CCD70C0040F10A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCBF9B725CCD70C0040F10A /* ViewController.swift in Sources */,
+				ADCBF9B525CCD70C0040F10A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCBF9BF25CCD70C0040F10A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCBF9C825CCD70C0040F10A /* PactMacOSExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCBF9CA25CCD70C0040F10A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCBF9D325CCD70C0040F10A /* PactMacOSExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADCBF9C525CCD70C0040F10A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADCBF9B025CCD70C0040F10A /* PactMacOSExample */;
+			targetProxy = ADCBF9C425CCD70C0040F10A /* PBXContainerItemProxy */;
+		};
+		ADCBF9D025CCD70C0040F10A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADCBF9B025CCD70C0040F10A /* PactMacOSExample */;
+			targetProxy = ADCBF9CF25CCD70C0040F10A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADCBF9BA25CCD70C0040F10A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADCBF9BB25CCD70C0040F10A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADCBF9D525CCD70D0040F10A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADCBF9D625CCD70D0040F10A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		ADCBF9D825CCD70D0040F10A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PactMacOSExample/PactMacOSExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PactMacOSExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pact-foundation.PactSwift.PactMacOSExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ADCBF9D925CCD70D0040F10A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PactMacOSExample/PactMacOSExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PactMacOSExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pact-foundation.PactSwift.PactMacOSExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		ADCBF9DB25CCD70D0040F10A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PactMacOSExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pact-foundation.PactSwift.PactMacOSExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PactMacOSExample.app/Contents/MacOS/PactMacOSExample";
+			};
+			name = Debug;
+		};
+		ADCBF9DC25CCD70D0040F10A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PactMacOSExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pact-foundation.PactSwift.PactMacOSExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PactMacOSExample.app/Contents/MacOS/PactMacOSExample";
+			};
+			name = Release;
+		};
+		ADCBF9DE25CCD70D0040F10A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PactMacOSExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pact-foundation.PactSwift.PactMacOSExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PactMacOSExample;
+			};
+			name = Debug;
+		};
+		ADCBF9DF25CCD70D0040F10A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PactMacOSExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pact-foundation.PactSwift.PactMacOSExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PactMacOSExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADCBF9AC25CCD70C0040F10A /* Build configuration list for PBXProject "PactMacOSExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADCBF9D525CCD70D0040F10A /* Debug */,
+				ADCBF9D625CCD70D0040F10A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADCBF9D725CCD70D0040F10A /* Build configuration list for PBXNativeTarget "PactMacOSExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADCBF9D825CCD70D0040F10A /* Debug */,
+				ADCBF9D925CCD70D0040F10A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADCBF9DA25CCD70D0040F10A /* Build configuration list for PBXNativeTarget "PactMacOSExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADCBF9DB25CCD70D0040F10A /* Debug */,
+				ADCBF9DC25CCD70D0040F10A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADCBF9DD25CCD70D0040F10A /* Build configuration list for PBXNativeTarget "PactMacOSExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADCBF9DE25CCD70D0040F10A /* Debug */,
+				ADCBF9DF25CCD70D0040F10A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADCBF9A925CCD70C0040F10A /* Project object */;
+}
