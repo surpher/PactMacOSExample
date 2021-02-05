@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD37D59A25CD37D600C5C9A3 /* SWPlanet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37D59925CD37D600C5C9A3 /* SWPlanet.swift */; };
+		AD37D59F25CD38C800C5C9A3 /* SWStarships.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37D59E25CD38C800C5C9A3 /* SWStarships.swift */; };
+		AD37D5A925CD5AFD00C5C9A3 /* SWStarshipsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37D5A825CD5AFD00C5C9A3 /* SWStarshipsList.swift */; };
+		AD841B4425CCFE6900FC008F /* SWAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD841B4325CCFE6900FC008F /* SWAPIClient.swift */; };
+		AD841B4E25CCFEF400FC008F /* SWPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD841B4D25CCFEF400FC008F /* SWPerson.swift */; };
 		ADCBF9B525CCD70C0040F10A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBF9B425CCD70C0040F10A /* AppDelegate.swift */; };
 		ADCBF9B725CCD70C0040F10A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBF9B625CCD70C0040F10A /* ViewController.swift */; };
 		ADCBF9B925CCD70C0040F10A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADCBF9B825CCD70C0040F10A /* Assets.xcassets */; };
 		ADCBF9BC25CCD70C0040F10A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCBF9BA25CCD70C0040F10A /* Main.storyboard */; };
 		ADCBF9C825CCD70C0040F10A /* PactMacOSExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBF9C725CCD70C0040F10A /* PactMacOSExampleTests.swift */; };
 		ADCBF9D325CCD70C0040F10A /* PactMacOSExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBF9D225CCD70C0040F10A /* PactMacOSExampleUITests.swift */; };
+		ADCBFA6625CCED3C0040F10A /* PactConsumerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCBFA4925CCEB420040F10A /* PactConsumerSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD37D59925CD37D600C5C9A3 /* SWPlanet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWPlanet.swift; sourceTree = "<group>"; };
+		AD37D59E25CD38C800C5C9A3 /* SWStarships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWStarships.swift; sourceTree = "<group>"; };
+		AD37D5A825CD5AFD00C5C9A3 /* SWStarshipsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWStarshipsList.swift; sourceTree = "<group>"; };
+		AD841B4325CCFE6900FC008F /* SWAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIClient.swift; sourceTree = "<group>"; };
+		AD841B4D25CCFEF400FC008F /* SWPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWPerson.swift; sourceTree = "<group>"; };
 		ADCBF9B125CCD70C0040F10A /* PactMacOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PactMacOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCBF9B425CCD70C0040F10A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADCBF9B625CCD70C0040F10A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +57,9 @@
 		ADCBF9CE25CCD70C0040F10A /* PactMacOSExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PactMacOSExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCBF9D225CCD70C0040F10A /* PactMacOSExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PactMacOSExampleUITests.swift; sourceTree = "<group>"; };
 		ADCBF9D425CCD70D0040F10A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADCBFA2025CCE7F70040F10A /* PactConsumerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PactConsumerSwift.framework; path = "Carthage/Build/PactConsumerSwift.xcframework/macos-arm64_x86_64/PactConsumerSwift.framework"; sourceTree = "<group>"; };
+		ADCBFA2825CCE92F0040F10A /* PactConsumerSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PactConsumerSwift.xcframework; path = Carthage/Build/PactConsumerSwift.xcframework; sourceTree = "<group>"; };
+		ADCBFA4925CCEB420040F10A /* PactConsumerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PactConsumerSwift.framework; path = Carthage/Build/Mac/PactConsumerSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADCBFA6625CCED3C0040F10A /* PactConsumerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +88,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD841B4825CCFE6F00FC008F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AD841B4325CCFE6900FC008F /* SWAPIClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AD841B4C25CCFEE900FC008F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD841B4D25CCFEF400FC008F /* SWPerson.swift */,
+				AD37D59925CD37D600C5C9A3 /* SWPlanet.swift */,
+				AD37D59E25CD38C800C5C9A3 /* SWStarships.swift */,
+				AD37D5A825CD5AFD00C5C9A3 /* SWStarshipsList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		ADCBF9A825CCD70C0040F10A = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +114,7 @@
 				ADCBF9C625CCD70C0040F10A /* PactMacOSExampleTests */,
 				ADCBF9D125CCD70C0040F10A /* PactMacOSExampleUITests */,
 				ADCBF9B225CCD70C0040F10A /* Products */,
+				ADCBFA1F25CCE7F70040F10A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +131,8 @@
 		ADCBF9B325CCD70C0040F10A /* PactMacOSExample */ = {
 			isa = PBXGroup;
 			children = (
+				AD841B4825CCFE6F00FC008F /* Network */,
+				AD841B4C25CCFEE900FC008F /* Model */,
 				ADCBF9B425CCD70C0040F10A /* AppDelegate.swift */,
 				ADCBF9B625CCD70C0040F10A /* ViewController.swift */,
 				ADCBF9B825CCD70C0040F10A /* Assets.xcassets */,
@@ -122,6 +159,16 @@
 				ADCBF9D425CCD70D0040F10A /* Info.plist */,
 			);
 			path = PactMacOSExampleUITests;
+			sourceTree = "<group>";
+		};
+		ADCBFA1F25CCE7F70040F10A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADCBFA4925CCEB420040F10A /* PactConsumerSwift.framework */,
+				ADCBFA2825CCE92F0040F10A /* PactConsumerSwift.xcframework */,
+				ADCBFA2025CCE7F70040F10A /* PactConsumerSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +301,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADCBF9B725CCD70C0040F10A /* ViewController.swift in Sources */,
+				AD37D59F25CD38C800C5C9A3 /* SWStarships.swift in Sources */,
+				AD37D59A25CD37D600C5C9A3 /* SWPlanet.swift in Sources */,
+				AD841B4425CCFE6900FC008F /* SWAPIClient.swift in Sources */,
+				AD37D5A925CD5AFD00C5C9A3 /* SWStarshipsList.swift in Sources */,
 				ADCBF9B525CCD70C0040F10A /* AppDelegate.swift in Sources */,
+				AD841B4E25CCFEF400FC008F /* SWPerson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,11 +513,16 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = PactMacOSExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pact-foundation.PactSwift.PactMacOSExampleTests";
@@ -482,11 +539,16 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = PactMacOSExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pact-foundation.PactSwift.PactMacOSExampleTests";

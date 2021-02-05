@@ -1,1 +1,1 @@
-github "DiUS/pact-consumer-swift.git" ~> 0.10
+github "DiUS/pact-consumer-swift.git" "master"

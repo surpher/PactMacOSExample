@@ -1,0 +1,213 @@
+{
+  "consumer": {
+    "name": "ThisApp"
+  },
+  "provider": {
+    "name": "SWAPI"
+  },
+  "interactions": [
+    {
+      "description": "a request for a list of starships",
+      "providerState": "starships exist",
+      "request": {
+        "method": "get",
+        "path": "/starships"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": {
+          "count": 99,
+          "results": [
+            {
+              "length": "150",
+              "cargo_capacity": "3000000",
+              "passengers": "600",
+              "model": "CR90 corvette",
+              "manufacturer": "Corellian Engineering Corporation",
+              "cost_in_credits": "3500000",
+              "crew": "30-165",
+              "films": [
+                "http://swapi.dev/api/films/1/"
+              ],
+              "name": "CR90 corvette",
+              "max_atmosphering_speed": "950"
+            },
+            {
+              "length": "150",
+              "cargo_capacity": "3000000",
+              "passengers": "600",
+              "model": "CR90 corvette",
+              "manufacturer": "Corellian Engineering Corporation",
+              "cost_in_credits": "3500000",
+              "crew": "30-165",
+              "films": [
+                "http://swapi.dev/api/films/1/"
+              ],
+              "name": "CR90 corvette",
+              "max_atmosphering_speed": "950"
+            }
+          ]
+        },
+        "matchingRules": {
+          "$.body.count": {
+            "match": "type"
+          },
+          "$.body.results": {
+            "min": 2
+          },
+          "$.body.results[*].*": {
+            "match": "type"
+          },
+          "$.body.results[*].model": {
+            "match": "type"
+          },
+          "$.body.results[*].films": {
+            "min": 1
+          },
+          "$.body.results[*].films[*].*": {
+            "match": "type"
+          },
+          "$.body.results[*].films[*]": {
+            "match": "type"
+          },
+          "$.body.results[*].name": {
+            "match": "type"
+          },
+          "$.body.results[*].max_atmosphering_speed": {
+            "match": "type"
+          }
+        }
+      }
+    },
+    {
+      "description": "a request for a character",
+      "providerState": "a character exists",
+      "request": {
+        "method": "get",
+        "path": "/people/1",
+        "headers": {
+          "Authorization": "Bearer",
+          "Accept": "application/json"
+        },
+        "matchingRules": {
+          "$.headers.Authorization": {
+            "match": "type"
+          }
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": {
+          "birth_year": "19BBY",
+          "name": "Luke Skywalker",
+          "eye_color": "blue",
+          "films": [
+            "https://swapi.co/api/films/2/"
+          ],
+          "edited": "2014-12-20T21:17:56.891000Z",
+          "species": [
+            "https://swapi.co/api/species/1/"
+          ]
+        },
+        "matchingRules": {
+          "$.body.name": {
+            "match": "type"
+          },
+          "$.body.films": {
+            "min": 1
+          },
+          "$.body.films[*].*": {
+            "match": "type"
+          },
+          "$.body.edited": {
+            "match": "regex",
+            "regex": "\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}.\\d{,6}Z"
+          },
+          "$.body.species": {
+            "min": 1
+          },
+          "$.body.species[*].*": {
+            "match": "type"
+          }
+        }
+      }
+    },
+    {
+      "description": "a request for a character",
+      "providerState": "a character does not exist",
+      "request": {
+        "method": "get",
+        "path": "/people/999999",
+        "headers": {
+          "Accept": "application/json",
+          "Authorization": "Bearer"
+        },
+        "matchingRules": {
+          "$.headers.Authorization": {
+            "match": "type"
+          }
+        }
+      },
+      "response": {
+        "status": 404,
+        "headers": {
+        },
+        "body": [
+          "404 Error"
+        ]
+      }
+    },
+    {
+      "description": "a request for a planet",
+      "providerState": "a planet exists",
+      "request": {
+        "method": "get",
+        "path": "/planets/12"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": {
+          "orbital_period": "351",
+          "diameter": "12900",
+          "rotation_period": "27",
+          "climate": "temperate, arid, windy",
+          "gravity": "1 standard",
+          "terrain": "scrublands, savanna, canyons, sinkholes",
+          "surface_water": "0.9",
+          "name": "Utapau",
+          "residents": [
+            "http://swapi.dev/api/people/83/",
+            "http://swapi.dev/api/people/83/",
+            "http://swapi.dev/api/people/83/"
+          ]
+        },
+        "matchingRules": {
+          "$.body.name": {
+            "match": "type"
+          },
+          "$.body.residents": {
+            "min": 3
+          },
+          "$.body.residents[*].*": {
+            "match": "type"
+          },
+          "$.body.residents[*]": {
+            "match": "regex",
+            "regex": "^(http[s]?:\\/\\/(www\\.)?|ftp:\\/\\/(www\\.)?|www\\.){1}([0-9A-Za-z-\\.@:%_\\+~#=]+)+((\\.[a-zA-Z]{2,3})+)(\\/(.)*)?(\\?(.)*)?"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

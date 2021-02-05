@@ -25,10 +25,33 @@ brew install pact-ruby-standalone
 ```shell
 carthage update --platform macos
 ```
-### Starting and stopping the MockServer (pact-ruby-standalone)
 
-[ IMAGE MISSING ]
+### Setting up PactMacOSExampleTests test target
+#### Build Phases
 
+Link the `PactConsumerSwift.framework` in Build Phases step. Drag it from the `/Carthage/Build/Mac/` folder onto the list.
+
+![build-phase](Support/images/build-phase-link-binary.png)
+
+#### Build Settings
+
+Add `$(PROJECT_DIR)/Carthage/Build/Mac` to `Framework Search Paths`
+
+![Framework Search Paths](Support/images/framework-search-paths.png)
+
+Add `$(FRAMEWORK_SEARCH_PATHS)` to `Runpath Search Paths`
+
+![Runpath Search Paths](Support/images/runpath-search-paths.png)
+
+#### Test pre-actions and post-actions
+
+Update test pre-actions to start the mock-server before tests are run.
+
+![pre-actions](Support/images/test-pre-actions.png)
+
+Update test post-actions to stop the mock-server when tests finish.
+
+![post-actions](Support/images/test-post-actions.png)
 ### Where are the Pact contracts?
 
-Once the tests pass you can find them in `${SRCROOT}/tmp/pacts/_your_provider-your_client.json`.
+Once the tests pass you can find them in `${SRCROOT}/tmp/pacts-ssl/thisapp-swapi.json`.
