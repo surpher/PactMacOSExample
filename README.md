@@ -6,7 +6,7 @@ An example macOS app demonstrating the use of PactConsumerSwift (https://github.
 
 ## Versions
 
-- macOS 11.0 BigSur
+- macOS 10.15+
 - Xcode 12.4
 - Carthage 0.37.0
 - pact-ruby-standalone
@@ -31,27 +31,32 @@ carthage update --platform macos
 
 Link the `PactConsumerSwift.framework` in Build Phases step. Drag it from the `/Carthage/Build/Mac/` folder onto the list.
 
-![build-phase](Support/images/build-phase-link-binary.png)
-
+![build-phase][build-phase-link-binary]
 #### Build Settings
 
 Add `$(PROJECT_DIR)/Carthage/Build/Mac` to `Framework Search Paths`
 
-![Framework Search Paths](Support/images/framework-search-paths.png)
+![Framework Search Paths][framework-search-paths]
 
 Add `$(FRAMEWORK_SEARCH_PATHS)` to `Runpath Search Paths`
 
-![Runpath Search Paths](Support/images/runpath-search-paths.png)
+![Runpath Search Paths][runpath-search-paths]
 
 #### Test pre-actions and post-actions
 
 Update test pre-actions to start the mock-server before tests are run.
 
-![pre-actions](Support/images/test-pre-actions.png)
+![pre-actions][pre-actions]
 
 Update test post-actions to stop the mock-server when tests finish.
 
-![post-actions](Support/images/test-post-actions.png)
+![post-actions][post-actions]
 ### Where are the Pact contracts?
 
 Once the tests pass you can find them in `${SRCROOT}/tmp/pacts-ssl/thisapp-swapi.json`.
+
+[build-phase-link-binary]: https://raw.githubusercontent.com/surpher/PactMacOSExample/main/Support/Images/build-phase-link-binary.png
+[framework-search-paths]: https://raw.githubusercontent.com/surpher/PactMacOSExample/main/Support/Images/framework-search-paths.png
+[runpath-search-paths]: https://raw.githubusercontent.com/surpher/PactMacOSExample/main/Support/Images/runpath-search-paths.png
+[pre-actions]: https://raw.githubusercontent.com/surpher/PactMacOSExample/main/Support/Images/test-pre-actions.png
+[post-actions]: https://raw.githubusercontent.com/surpher/PactMacOSExample/main/Support/Images/test-post-actions.png
