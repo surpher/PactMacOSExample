@@ -23,7 +23,7 @@ class PactMacOSExampleTests: XCTestCase {
 
 	// MARK: - Tests
 
-	func testFetchingStarWarsPerson() {
+	func testFetchingUsingGeneric() {
 		mockService
 			.given("a character exists")
 			.uponReceiving("a request for a character")
@@ -48,22 +48,23 @@ class PactMacOSExampleTests: XCTestCase {
 			)
 
 		mockService.run(timeout: 0.1) { [unowned self] testCompleted in
-			apiClient.fetchPerson(id: 1) { result, error in
-				do {
-					let person = try XCTUnwrap(result)
+			apiClient.fetch(endpoint: .people, id: 1) { (result: SWPerson?, error) in
+					do {
+						let person = try XCTUnwrap(result)
 
-					XCTAssertEqual(person.name, "Luke Skywalker")
-					XCTAssertEqual(person.eyeColor, "blue")
-					XCTAssertEqual(person.edited, "2014-12-20T21:17:56.891000Z")
-					XCTAssertTrue(person.films.contains("https://swapi.co/api/films/2/"))
-					XCTAssertTrue(person.species.count == 1)
-				} catch {
-					XCTFail("Expected a SWPerson object")
-				}
+						XCTAssertEqual(person.name, "Luke Skywalker")
+						XCTAssertEqual(person.eyeColor, "blue")
+						XCTAssertEqual(person.edited, "2014-12-20T21:17:56.891000Z")
+						XCTAssertTrue(person.films.contains("https://swapi.co/api/films/2/"))
+						XCTAssertTrue(person.species.count == 1)
+					} catch {
+						XCTFail("Expected a SWPerson object")
+					}
 
-				testCompleted()
+					testCompleted()
 			}
 		}
+
 	}
 
 	func testFetchingStarWarsPersonWithError() {
@@ -84,7 +85,7 @@ class PactMacOSExampleTests: XCTestCase {
 			)
 
 		mockService.run(timeout: 0.1) { [unowned self] testCompleted in
-			apiClient.fetchPerson(id: 999999) { result, error in
+			apiClient.fetch(endpoint: .people, id: 999999) { (result: SWPerson?, error) in
 				do {
 					let error = try XCTUnwrap(error as? SWAPIError)
 					guard case .statusCode(let code) = error else {
@@ -128,7 +129,7 @@ class PactMacOSExampleTests: XCTestCase {
 			)
 
 		mockService.run(timeout: 1) { [unowned self] testComplete in
-			apiClient.fetchPlanet(id: 12) { planet, error in
+			apiClient.fetch(endpoint: .planets, id: 12) { (planet: SWPlanet?, error) in
 				do {
 					let planet = try XCTUnwrap(planet)
 
@@ -174,21 +175,23 @@ class PactMacOSExampleTests: XCTestCase {
 			)
 
 		mockService.run { [unowned self] testComlete in
-			apiClient.fetchStarships { starships, error in
-				do {
-					let starships = try XCTUnwrap(starships)
+			apiClient.fetch(
+				endpoint: .starships,
+				completion: { (starships: SWStarshipsList?, error) in
+					do {
+						let starships = try XCTUnwrap(starships)
 
-					XCTAssertEqual(starships.count, 99)
-					XCTAssertEqual(starships.results.count, 2)
+						XCTAssertEqual(starships.count, 99)
+						XCTAssertEqual(starships.results.count, 2)
 
-					let starship = try XCTUnwrap(starships.results.first)
-					XCTAssertEqual(starship.films.count, 1)
-					XCTAssertEqual(starship.maxAtmospheringSpeed, "950")
-				} catch {
-					XCTFail("Expected a SWStarshipsList object")
-				}
-				testComlete()
-			}
+						let starship = try XCTUnwrap(starships.results.first)
+						XCTAssertEqual(starship.films.count, 1)
+						XCTAssertEqual(starship.maxAtmospheringSpeed, "950")
+					} catch {
+						XCTFail("Expected a SWStarshipsList object")
+					}
+					testComlete()
+			})
 		}
 	}
 

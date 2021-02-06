@@ -10,6 +10,11 @@
 		AD37D59A25CD37D600C5C9A3 /* SWPlanet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37D59925CD37D600C5C9A3 /* SWPlanet.swift */; };
 		AD37D59F25CD38C800C5C9A3 /* SWStarships.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37D59E25CD38C800C5C9A3 /* SWStarships.swift */; };
 		AD37D5A925CD5AFD00C5C9A3 /* SWStarshipsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37D5A825CD5AFD00C5C9A3 /* SWStarshipsList.swift */; };
+		AD49BDC225CDFC3400AC0A9E /* SWAPIClient+URLSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD49BDC125CDFC3400AC0A9E /* SWAPIClient+URLSessionDelegate.swift */; };
+		AD49BDC725CDFC7500AC0A9E /* URLSession+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD49BDC625CDFC7400AC0A9E /* URLSession+extension.swift */; };
+		AD49BDCC25CDFC9E00AC0A9E /* URLRequest+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD49BDCB25CDFC9E00AC0A9E /* URLRequest+extension.swift */; };
+		AD49BDD425CDFCCE00AC0A9E /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD49BDD325CDFCCE00AC0A9E /* HTTPMethod.swift */; };
+		AD49BDD925CDFCFD00AC0A9E /* SWAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD49BDD825CDFCFD00AC0A9E /* SWAPIError.swift */; };
 		AD841B4425CCFE6900FC008F /* SWAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD841B4325CCFE6900FC008F /* SWAPIClient.swift */; };
 		AD841B4E25CCFEF400FC008F /* SWPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD841B4D25CCFEF400FC008F /* SWPerson.swift */; };
 		ADCBF9B525CCD70C0040F10A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCBF9B425CCD70C0040F10A /* AppDelegate.swift */; };
@@ -42,6 +47,11 @@
 		AD37D59925CD37D600C5C9A3 /* SWPlanet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWPlanet.swift; sourceTree = "<group>"; };
 		AD37D59E25CD38C800C5C9A3 /* SWStarships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWStarships.swift; sourceTree = "<group>"; };
 		AD37D5A825CD5AFD00C5C9A3 /* SWStarshipsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWStarshipsList.swift; sourceTree = "<group>"; };
+		AD49BDC125CDFC3400AC0A9E /* SWAPIClient+URLSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SWAPIClient+URLSessionDelegate.swift"; sourceTree = "<group>"; };
+		AD49BDC625CDFC7400AC0A9E /* URLSession+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+extension.swift"; sourceTree = "<group>"; };
+		AD49BDCB25CDFC9E00AC0A9E /* URLRequest+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+extension.swift"; sourceTree = "<group>"; };
+		AD49BDD325CDFCCE00AC0A9E /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		AD49BDD825CDFCFD00AC0A9E /* SWAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIError.swift; sourceTree = "<group>"; };
 		AD841B4325CCFE6900FC008F /* SWAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIClient.swift; sourceTree = "<group>"; };
 		AD841B4D25CCFEF400FC008F /* SWPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWPerson.swift; sourceTree = "<group>"; };
 		ADCBF9B125CCD70C0040F10A /* PactMacOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PactMacOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +101,12 @@
 		ADBF60D425CD6B590032FFC8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				AD49BDD325CDFCCE00AC0A9E /* HTTPMethod.swift */,
 				AD841B4325CCFE6900FC008F /* SWAPIClient.swift */,
+				AD49BDC125CDFC3400AC0A9E /* SWAPIClient+URLSessionDelegate.swift */,
+				AD49BDD825CDFCFD00AC0A9E /* SWAPIError.swift */,
+				AD49BDCB25CDFC9E00AC0A9E /* URLRequest+extension.swift */,
+				AD49BDC625CDFC7400AC0A9E /* URLSession+extension.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -309,12 +324,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADCBF9B725CCD70C0040F10A /* ViewController.swift in Sources */,
+				AD49BDD925CDFCFD00AC0A9E /* SWAPIError.swift in Sources */,
 				AD37D59F25CD38C800C5C9A3 /* SWStarships.swift in Sources */,
 				AD37D59A25CD37D600C5C9A3 /* SWPlanet.swift in Sources */,
+				AD49BDD425CDFCCE00AC0A9E /* HTTPMethod.swift in Sources */,
 				AD841B4425CCFE6900FC008F /* SWAPIClient.swift in Sources */,
 				AD37D5A925CD5AFD00C5C9A3 /* SWStarshipsList.swift in Sources */,
 				ADCBF9B525CCD70C0040F10A /* AppDelegate.swift in Sources */,
 				AD841B4E25CCFEF400FC008F /* SWPerson.swift in Sources */,
+				AD49BDC225CDFC3400AC0A9E /* SWAPIClient+URLSessionDelegate.swift in Sources */,
+				AD49BDC725CDFC7500AC0A9E /* URLSession+extension.swift in Sources */,
+				AD49BDCC25CDFC9E00AC0A9E /* URLRequest+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
