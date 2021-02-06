@@ -11,7 +11,6 @@
 //
 
 import Foundation
-import os.log
 
 class SWAPIClient: NSObject {
 
